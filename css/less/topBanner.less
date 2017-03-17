@@ -1,0 +1,111 @@
+// main: ../site.less
+
+.topBannerWrapper{
+  background: #30206c;
+}
+.topBanner{
+  width: 1130px;
+  margin: 0 auto;
+  h1{
+    color: #fff;
+    float: left;
+    margin: 8px 0 0 200px;
+    padding: 15px 18px;
+    font-size: 18px;
+    max-width: 480px;
+  }
+}
+.productNavWrapper{
+  background: url(https://www.cendyn.com/getmedia/205e7bbc-b18c-42ab-862a-0618a3a1dbef/bgr_ssologos/) top left repeat;
+  position: absolute;
+}
+.productNav{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+.productNavItem{
+  width: 200px;
+  .lnr{
+    float: right;
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  &:hover{
+    .productNavSub{
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 200px;
+      background: #f1f6fe;
+      -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.3);
+      -moz-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.3);
+      box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.3);
+    }
+  }
+  a{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    padding: 20px 20px 20px 32px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.productNavSub{
+  display: none;
+  list-style-type: none;
+}
+.productNavSubItem{
+  float: none;
+  a{
+    padding: 20px 5px 20px 32px;
+    color: #1d0b61;
+    &:hover{
+      background: #e0ebfd;
+    }
+  }
+}
+.utilityNavWrapper{
+  font-size: 12px;
+  float: right;
+  .userEmail{
+    color: #d8d6e0;
+    text-align: right;
+    padding: 3px 0 10px;
+  }
+}
+.utilityNav{
+  padding: 9px 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  li{
+    position: relative;
+    padding: 0 8px;
+    float: left;
+    a{
+      color: #d8d6e0;
+      text-decoration: none;
+      &:hover{
+        color: #fff;
+      }
+    }
+    + li:after{
+      content:"";
+      background: #ccc;
+      position: absolute;
+      bottom: 25%;
+      left: 0;
+      height: 50%;
+      width: 1px;
+    }
+    &:last-child{
+      padding-right:0;
+    }
+  }
+}
