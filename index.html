@@ -12,6 +12,7 @@
   <body>
 
     <div class="wrapper">
+      <!-- begin top banner -->
       <div class="topBannerWrapper container-fluid">
         <div class="topBanner">
           <nav class="productNavWrapper">
@@ -40,7 +41,48 @@
             <div class="userEmail">bfranklin@cendyn.com</div>
           </div>
         </div>
-      </div>
+      </div><!-- end top banner -->
+
+      <!-- begin main nav -->
+      <div class="mainNavWrapper container-fluid">
+        <div class="mainNav">
+          <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Create Campaign</a></li>
+            <li><a href="#">Manage Campagin</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">eGallery</a></li>
+          </ul>
+        </div>
+      </div><!-- end main nav -->
+
+      <!-- begin main content section -->
+      <div class="mainContentWrapper">
+        <!-- begin main tabs section -->
+          <ul class="nav nav-tabs mainTabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+            </li>
+            <li role="presentation">
+              <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+            </li>
+            <li role="presentation">
+              <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+            </li>
+          </ul><!-- end main tabs section -->
+          <!-- begin tab content section -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">home 1</div>
+            <div role="tabpanel" class="tab-pane" id="profile">home 2</div>
+            <div role="tabpanel" class="tab-pane" id="messages">home 3</div>
+            <div role="tabpanel" class="tab-pane" id="settings">home 4</div>
+          </div><!-- end tab content section -->
+      </div><!-- end main content section -->
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

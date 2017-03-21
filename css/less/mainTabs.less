@@ -1,0 +1,35 @@
+// main: ../site.less
+
+.mainTabs{
+  border-bottom: 2px solid #da5718;
+  padding-left: 8px;
+  li{
+    margin-bottom: -2px;
+    border-top: 2px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    a{
+      margin-right: 0;
+      border-radius: 0;
+      color: #666;
+      &:hover{
+        color: #E76424;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+    &.active{
+      border-top: 2px solid #da5718;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      a{
+        border-color: transparent;
+        color: #E76424;
+        &:hover, &:focus, &:active{
+          border-color: transparent;
+          color: #E76424;
+        }
+      }
+    }
+  }
+}
