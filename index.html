@@ -20,7 +20,11 @@
       var val = $("#confirmIdentityBox").val();
       if(val === "qwe"){
         var url = window.location.href;
-        url = url.replace("index.html", "uikits-cendyn-2017-01.html");
+        if(url.indexOf("index.html") > -1){
+          url = url.replace("index.html", "uikits-cendyn-2017-01.html");
+        } else {
+          url += "/uikits-cendyn-2017-01.html";
+        }
         window.location = url;
       } else {
         alert("Try again!")
