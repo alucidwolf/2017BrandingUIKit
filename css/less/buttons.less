@@ -1,0 +1,29 @@
+// main: ../site.less
+
+.btn{
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.btn-primary{
+  background: #da5718;
+  border-color: transparent;
+  &:hover, &:active, &:focus, &:active:hover, &:active:focus{
+    background: #b54814;
+    border-color: transparent;
+  }
+}
+
+.btn-alternate{
+  background: #fff;
+  border-color: #b3a6e5;
+  color: #30206c;
+  &:hover, &:active, &:focus, &:active:hover, &:active:focus{
+    color: #fff;
+    background: #30206c;
+    border-color: #30206c;
+  }
+}
