@@ -9,33 +9,22 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
   <link href="css/site.min.css" rel="stylesheet" />
 </head>
-<style>
-.boxOfColorDefault{
-  background: #f5f5f5;
-  width: 100%;
-  height: 100px;
-}
-.boxOfColorPrimary{
-  background: #da5718;
-  width: 100%;
-  height: 100px;
-}
-.boxOfColorAlternate{
-  background: #30206c;
-  width: 100%;
-  height: 100px;
-}
-.boxOfColorPrimaryText{
-  color: #005daa;
-}
-.boxOfColorAlternateText{
-  padding: 15px;
-  background: #30206c;
-  color: #d8d6e0;
-}
-</style>
 
 <body>
+  <div id="loader">
+    <h3><img src="http://www.cendyn.com/getmedia/649f16b4-df37-4c35-8dca-20976823b781/favicon-apple/" alt="Cendyn Loader Icon"> Loading in progress..</h3>
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
   <!-- begin page wrapper -->
   <div class="wrapper">
     <!-- begin top banner -->
@@ -81,12 +70,13 @@
               <li><a href="#" target="_blank">Events Cloud</a></li>
             </ul>
           </li>
+          <li><a href="#">Font Icons</a></li>
         </ul>
       </div>
     </div>
     <!-- end main nav -->
     <!-- begin main content section -->
-    <div class="mainContentWrapper">
+    <div class="container mainContentWrapper">
       <!-- begin colors documentation -->
       <h1>Colors</h1>
       <div class="well">
@@ -120,6 +110,9 @@
             <h2>Heading Text</h2>
             <div class="boxOfColorPrimaryText">
               <h1>I am an H1</h1>
+              <h2>I am an H2</h2>
+              <h3>I am an H3</h3>
+              <h4>I am an H4</h4>
             </div>
           </div>
           <div class="col-sm-4">
@@ -211,6 +204,7 @@
       </div>
       <h1>Buttons</h1>
       <div class="well">
+        <!-- begin button section -->
         <h2>Primary Buttons</h2>
         <div class="row">
           <div class="col-sm-4">
@@ -243,7 +237,19 @@
         </div>
       </div>
       <!-- end buttons section -->
+      <!-- begin link section -->
+      <h1>Links</h1>
+      <div class="well">
+        <p>
+          <a href="">Default Link</a>
+        </p>
+        <p>
+          <a class="link-alternate" href="">Alternate Link</a>
+        </p>
+      </div>
+      <!-- end link section -->
       <h1>Panels</h1>
+      <!-- begin panel section -->
       <div class="well">
         <div class="row">
           <div class="col-sm-4">
@@ -287,6 +293,37 @@
           </div>
         </div>
       </div>
+      <!-- end panel section -->
+      <h1>Form Elements</h1>
+      <!-- begin forms section -->
+      <div class="well">
+        <h2>Horizontal Form</h2>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">First Label</label>
+            <div class="col-sm-4">
+              <input class="form-control" type="text" placeholder="First Label">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Second Label</label>
+            <div class="col-sm-4">
+              <input class="form-control" type="text" placeholder="Second Label">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Search Field</label>
+            <div class="col-sm-10 input-group">
+              <input class="form-control" type="text" placeholder="Search Field">
+              <div class="input-group-btn">
+                <input class="btn btn-primary" type="button" value="Submit">
+                <input class="btn btn-alternate" type="button" value="Cancel">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end forms section -->
     </div>
     <!-- end main content section -->
     <footer>
@@ -300,20 +337,6 @@
     </footer>
   </div>
   <!-- end page wrapper -->
-  <div id="loader">
-    <h3><img src="http://www.cendyn.com/getmedia/649f16b4-df37-4c35-8dca-20976823b781/favicon-apple/" alt="Cendyn Loader Icon"> Loading in progress..</h3>
-    <div class="sk-cube-grid">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
-      <div class="sk-cube sk-cube3"></div>
-      <div class="sk-cube sk-cube4"></div>
-      <div class="sk-cube sk-cube5"></div>
-      <div class="sk-cube sk-cube6"></div>
-      <div class="sk-cube sk-cube7"></div>
-      <div class="sk-cube sk-cube8"></div>
-      <div class="sk-cube sk-cube9"></div>
-    </div>
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/loader.js"></script>
