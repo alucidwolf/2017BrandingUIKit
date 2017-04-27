@@ -11,6 +11,12 @@
     -webkit-box-shadow:none;
   }
 }
+.form-group{
+  a{
+    padding: 7px 10px 7px 0;
+    display: inline-block;
+  }
+}
 label{
   font-weight: normal;
 }
@@ -19,6 +25,16 @@ label{
   top: 5px;
   right: 5px;
   color: #e73d4a;
+}
+.control-checkbox{
+  .checkbox{
+    padding-left: 20px;
+  }
+}
+.control-radio{
+  .radio{
+    padding-left: 20px;
+  }
 }
 .input-group[class*=col-]{
   padding-right: 15px;
@@ -34,4 +50,21 @@ label{
 }
 .input-group-addon{
   border-radius: 2px;
+  background-color: transparent;
+  border-color: transparent;
+  border-left: 0;
+}
+.tooltip{
+  font-size: 14px;
+}
+.tooltip-inner{
+  background: #fff;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  color: #666;
+  border-radius: 0;
+  min-width: 200px;
+}
+.tooltip.top .tooltip-arrow{
+  border-top-color: #ccc;
 }
