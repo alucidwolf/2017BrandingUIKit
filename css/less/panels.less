@@ -3,12 +3,46 @@
 .panel{
   border-radius: 0;
 }
+.panel-group{
+  .panel{
+    border-radius: 0;
+  }
+  .panel-heading{
+    &+.panel-collapse{
+      > .list-group, > .panel-body{
+        border-top: none;
+      }
+    }
+  }
+}
 .panel-heading{
   border-radius: 0;
   border: none;
+  position: relative;
   .panel-title{
     font-weight: bold;
     font-size: 14px;
+    a{
+      color: #333;
+      text-decoration: none;
+      &:hover,&:active,&:focus{
+        color: #333;
+        text-decoration: underline;
+      }
+      span[class^="icon"]{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+      }
+      &.collapsed{
+        span[class^="icon"]{
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+        }
+      }
+    }
   }
 }
 .panel-primary{
