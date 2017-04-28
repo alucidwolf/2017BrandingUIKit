@@ -1,0 +1,44 @@
+// main: ../site.less
+
+.wizardPills{
+  > li + li{
+    margin-left: 0;
+  }
+  li{
+    width: 20%;
+    a{
+      border-radius: 0;
+      text-decoration: none;
+      color: #333;
+      padding: 23px 15px;
+      &:hover, &:focus, &:active{
+        background: #ccc;
+        span{
+          background: #da5718;
+          color: #fff;
+        }
+      }
+      span{
+        background: #ccc;
+        color: #666;
+        padding: 9px 13px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    &.active{
+      a{
+        background: #ccc;
+        color: #333;
+        &:hover, &:focus, &:active{
+          background: #ccc;
+          color: #333;
+        }
+        span{
+          background: #da5718;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
