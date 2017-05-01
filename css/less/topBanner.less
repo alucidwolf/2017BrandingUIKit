@@ -9,7 +9,7 @@
   h1{
     color: #fff;
     float: left;
-    margin: 8px 0 0 200px;
+    margin: 8px 0 8px 200px;
     padding: 15px 18px;
     font-size: 18px;
     max-width: 480px;
@@ -80,6 +80,49 @@
     color: #d8d6e0;
     text-align: right;
     padding: 3px 0 10px;
+  }
+  &.settingsWrapper{
+    font-size: 15px;
+    > a{
+      padding: 10px 14px;
+      margin-top: 10px;
+      display: block;
+      color: #d8d6e0;
+      text-decoration: none;
+      [class^="icon-"], [class*=" icon-"]{
+        font-size: 11px;
+      }
+      &:hover{
+        color: #d3d2d7;
+        background: #4e4a5e;
+      }
+    }
+    .dropdown-menu{
+      background: #4e4a5e;
+      margin:0;
+      padding: 0;
+      min-width: auto;
+      width: 100%;
+      border:none;
+      font-size: 15px;
+      > li{
+        > a{
+          padding: 3px 15px;
+          color: #fff;
+          text-decoration: none;
+          &:hover, &:focus{
+            color: #fff;
+            text-decoration: underline;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  &.open{
+    a{
+      background: #4e4a5e;
+    }
   }
 }
 .utilityNav{
