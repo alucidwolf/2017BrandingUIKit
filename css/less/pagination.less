@@ -1,0 +1,30 @@
+// main: ../site.less
+
+.paginationWrapper{
+    width: 100%;
+    text-align: center;
+    .pagination{
+        > li{
+            > a{
+                padding: 6px;
+                margin-left: 5px;
+                border-radius: 0;
+                color: #666;
+                &.active, &:hover{
+                    background-color: transparent;
+                    border-color: #e66524;
+                    color: #e66524;
+                }
+                &.disabled{
+                    color: #e8e9eb;
+                    cursor: not-allowed;
+                    &.active, &:hover{
+                        background-color: transparent;
+                        border-color: #ddd;
+                        color: #e8e9eb;
+                    }
+                }
+            }
+        }
+    }
+}
