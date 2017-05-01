@@ -1,0 +1,30 @@
+// main: ../site.less
+
+.searchPanelWrapper{
+    overflow: hidden;
+    .searchPanel{
+        background: #f8f8f8;
+        padding: 0 15px 20px 15px;
+        .searchPanelBtn{
+            .form-group{
+                margin-top: 24px;
+                a{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    &.advanced{
+        .searchPanelBtn{
+            .form-group{
+                margin-top: 26px;
+            }
+        }
+        .icon-cross{
+            color: #212121;
+            position: absolute;
+            top:15px;
+            right: 15px;
+        }
+    }
+}
