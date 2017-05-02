@@ -1,0 +1,45 @@
+// main: ../site.less
+
+.linkNav {
+    position: relative;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        -webkit-padding-start:0;
+      li{
+          float: left;
+        a{
+          color:#4f4f4f;
+          padding: 0 1em;
+          border-right: 1px solid #555;
+          text-decoration: none;
+          &:hover{
+              text-decoration: underline;
+          }
+        }
+        &.disabled{
+          a{
+              color: #999;
+              text-shadow: 1px 0 0 #eee;
+              &:hover{
+                cursor: not-allowed;
+                text-decoration: none;
+              }
+          }
+        }
+        &:last-child{
+          a{
+            border-right: none;
+          }
+        }
+        &.active{
+            a{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+}
