@@ -76,6 +76,22 @@
 .utilityNavWrapper{
   font-size: 12px;
   float: right;
+  .utilityNavGreeting{
+      padding: 10px 14px;
+      float: left;
+      margin-top: 10px;
+      color: #d8d6e0;
+      position: relative;
+      &:after{
+          content: "";
+          background: #ccc;
+          position: absolute;
+          bottom: 30%;
+          right: 0;
+          height: 40%;
+          width: 1px;
+      }
+  }
   .userEmail{
     color: #d8d6e0;
     text-align: right;
@@ -89,6 +105,7 @@
       display: block;
       color: #d8d6e0;
       text-decoration: none;
+      float: left;
       [class^="icon-"], [class*=" icon-"]{
         font-size: 11px;
       }
@@ -102,9 +119,11 @@
       margin:0;
       padding: 0;
       min-width: auto;
-      width: 100%;
+      width: 120px;
       border:none;
       font-size: 15px;
+      right: 0;
+      left: auto;
       > li{
         > a{
           padding: 3px 15px;
