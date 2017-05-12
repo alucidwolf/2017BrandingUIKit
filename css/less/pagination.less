@@ -5,6 +5,7 @@
     text-align: center;
     .pagination{
         > li{
+          display: inline-block;
             > a{
                 padding: 6px;
                 margin-left: 5px;
@@ -23,6 +24,24 @@
                         border-color: #ddd;
                         color: #e8e9eb;
                     }
+                }
+                &.paginationText{
+                  background-color: transparent;
+                  border-color: transparent;
+                  &.active, &:hover{
+                      background-color: transparent;
+                      border-color: transparent;
+                      color: #666;
+                      cursor: default;
+                  }
+                  &.goToSelect{
+                    padding: 0;
+                    .form-control{
+                      display: inline-block;
+                      width: auto;
+                      height: auto;
+                    }
+                  }
                 }
             }
         }
