@@ -11,8 +11,29 @@ a.btn{
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
+  &.disabled, &[disabled]{
+    background: #eeeded;
+    border-color: #eeeded;
+    color: #a5a4a4;
+    &:hover, &:focus, &:active, &:active:focus{
+      background: #eeeded;
+      border-color: #eeeded;
+      color: #a5a4a4;
+      cursor: not-allowed;
+    }
+  }
 }
-
+input:disabled{
+  background: #eeeded;
+  border-color: #eeeded;
+  color: #a5a4a4;
+  &:hover, &:focus, &:active, &:active:focus{
+    background: #eeeded;
+    border-color: #eeeded;
+    color: #a5a4a4;
+    cursor: not-allowed;
+  }
+}
 .btn-primary{
   background: #da5718;
   border-color: transparent;
@@ -31,4 +52,8 @@ a.btn{
     background: #30206c;
     border-color: #30206c;
   }
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+  opacity: 1;
 }
